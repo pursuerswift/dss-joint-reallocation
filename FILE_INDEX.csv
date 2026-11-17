@@ -1,0 +1,171 @@
+archive_path,bytes,description
+experiments/upgrade_v3/config/full.json,1994,Experiment configuration
+experiments/upgrade_v3/config/joint_followup.json,481,Experiment configuration
+experiments/upgrade_v3/config/pilot.json,1339,Experiment configuration
+experiments/upgrade_v3/config/revision_conflict.json,558,Experiment configuration
+experiments/upgrade_v3/coupling_experiment.py,6063,Analysis code
+experiments/upgrade_v3/joint_figures.py,5809,Analysis code
+experiments/upgrade_v3/joint_followup.py,7491,Analysis code
+experiments/upgrade_v3/penalty_path.py,5348,Analysis code
+experiments/upgrade_v3/results/expanded_v3/coupling/design.json,450,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/coupling/paired_contrasts.csv,2679,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/coupling/replicates.csv,624418,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/coupling/summary.csv,4734,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/config.json,1994,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/frozen_decision_test.csv,82262,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/gate_candidates.csv,177001,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/complete.json,159,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/design.json,1218,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/frozen_decision_test.csv,9182,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/gate_candidates.csv,21171,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/net_power_frontier.csv,55466,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/split_ids.npz,99447,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/test_candidates.csv,22414,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261201/test_paired_contrasts.csv,13456,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/complete.json,159,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/design.json,1219,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/frozen_decision_test.csv,9182,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/gate_candidates.csv,21372,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/net_power_frontier.csv,55899,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/split_ids.npz,99449,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/test_candidates.csv,22601,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261202/test_paired_contrasts.csv,13481,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/complete.json,159,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/design.json,1217,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/frozen_decision_test.csv,9182,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/gate_candidates.csv,20883,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/net_power_frontier.csv,55525,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/split_ids.npz,99438,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/test_candidates.csv,22569,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/hillstrom_20261203/test_paired_contrasts.csv,13540,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/complete.json,159,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/design.json,1177,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/frozen_decision_test.csv,9398,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/gate_candidates.csv,22308,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/net_power_frontier.csv,56535,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/split_ids.npz,78017,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/test_candidates.csv,23646,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261201/test_paired_contrasts.csv,13601,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/complete.json,159,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/design.json,1174,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/frozen_decision_test.csv,9398,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/gate_candidates.csv,22395,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/net_power_frontier.csv,56540,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/split_ids.npz,78012,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/test_candidates.csv,23712,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261202/test_paired_contrasts.csv,13714,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/complete.json,159,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/design.json,1175,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/frozen_decision_test.csv,9398,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/gate_candidates.csv,22223,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/net_power_frontier.csv,56359,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/split_ids.npz,78003,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/test_candidates.csv,23768,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/karlan_list_20261203/test_paired_contrasts.csv,13730,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/manifest.json,497,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/net_power_frontier.csv,448641,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/complete.json,161,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/design.json,1274,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/frozen_decision_test.csv,9182,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/gate_candidates.csv,18920,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/net_power_frontier.csv,36826,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/split_ids.npz,194969,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/test_candidates.csv,20525,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261201/test_paired_contrasts.csv,11979,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/complete.json,161,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/design.json,1265,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/frozen_decision_test.csv,9182,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/gate_candidates.csv,20340,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/net_power_frontier.csv,44018,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/split_ids.npz,194961,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/test_candidates.csv,21654,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261202/test_paired_contrasts.csv,12595,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/complete.json,161,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/design.json,1272,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/frozen_decision_test.csv,9182,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/gate_candidates.csv,19797,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/gate_choices_before_test.json,20181,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/net_power_frontier.csv,41389,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/split_ids.npz,194981,Saved partition identifiers; original cohort records obtained separately
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/test_candidates.csv,20483,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/promotion_20261203/test_paired_contrasts.csv,11959,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/test_candidates.csv,191364,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/empirical/test_paired_contrasts.csv,111535,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/config.json,1994,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/empirical_candidate_values.png,50615,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/empirical_candidate_values.svg,64593,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/empirical_split_values.png,70558,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/empirical_split_values.svg,68761,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/flow_scaling.png,74501,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/flow_scaling.svg,40508,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/manifest.json,495,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_adoption.png,120286,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_adoption.svg,43232,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_net_value.png,141450,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_net_value.svg,115556,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_paired_gain.png,151791,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_paired_gain.svg,77955,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_sample_size.png,233987,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/figures/simulation_sample_size.svg,94807,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/penalty_path/candidate_values.csv,67167,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/penalty_path/decision_values.csv,4817,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/penalty_path/design.json,529,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/scale/config.json,1994,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/scale/manifest.json,493,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/scale/runtime.csv,1989,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/scale/runtime_concurrent.csv,1991,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/simulate/config.json,1994,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/simulate/manifest.json,496,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/simulate/paired_contrasts.csv,16863,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/simulate/replicates.csv,20033857,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/simulate/summary.csv,42168,Generated research output or experiment metadata
+experiments/upgrade_v3/results/expanded_v3/validation.json,1740,Generated research output or experiment metadata
+experiments/upgrade_v3/results/joint_v3_20261117/all_complete.json,22,Generated research output or experiment metadata
+experiments/upgrade_v3/results/joint_v3_20261117/benchmark/runtime.csv,3816,Generated research output or experiment metadata
+experiments/upgrade_v3/results/joint_v3_20261117/config.json,639,Generated research output or experiment metadata
+experiments/upgrade_v3/results/joint_v3_20261117/mechanisms/paired_contrasts.csv,15211,Generated research output or experiment metadata
+experiments/upgrade_v3/results/joint_v3_20261117/mechanisms/replicates.csv,1411227,Generated research output or experiment metadata
+experiments/upgrade_v3/results/joint_v3_20261117/mechanisms/summary.csv,26171,Generated research output or experiment metadata
+experiments/upgrade_v3/results/joint_v3_20261117/validation.json,849,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/conflict/config.json,673,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/conflict/manifest.json,496,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/conflict/paired_contrasts.csv,28750,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/conflict/paired_replicates.csv,450467,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/conflict/replicates.csv,2377939,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/conflict/summary.csv,85490,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/conflict/validation.json,178,Generated research output or experiment metadata
+experiments/upgrade_v3/results/revision_v3_20261117/validation.json,373,Generated research output or experiment metadata
+experiments/upgrade_v3/run.py,3732,Analysis code
+experiments/upgrade_v3/tests/__init__.py,0,Analysis code
+experiments/upgrade_v3/tests/test_comparators.py,1640,Analysis code
+experiments/upgrade_v3/tests/test_core.py,6351,Analysis code
+experiments/upgrade_v3/upgrade/__init__.py,58,Analysis code
+experiments/upgrade_v3/upgrade/comparators.py,3292,Analysis code
+experiments/upgrade_v3/upgrade/conflict.py,6129,Analysis code
+experiments/upgrade_v3/upgrade/data.py,7581,Analysis code
+experiments/upgrade_v3/upgrade/empirical.py,7559,Analysis code
+experiments/upgrade_v3/upgrade/figures.py,7107,Analysis code
+experiments/upgrade_v3/upgrade/flow.py,8483,Analysis code
+experiments/upgrade_v3/upgrade/inference.py,4605,Analysis code
+experiments/upgrade_v3/upgrade/policies.py,2887,Analysis code
+experiments/upgrade_v3/upgrade/scale.py,1255,Analysis code
+experiments/upgrade_v3/upgrade/simulation.py,6412,Analysis code
+experiments/upgrade_v3/verify_results.py,5706,Analysis code
+papers/dss/v3_joint_reallocation/publication_figures.py,6743,Analysis code
+papers/dss/v3_joint_reallocation/revision_20261117/conflict_largest_grid.csv,3980,Generated research output or experiment metadata
+papers/dss/v3_joint_reallocation/revision_20261117/historical_candidate_results.csv,2300,Generated research output or experiment metadata
+papers/dss/v3_joint_reallocation/revision_20261117/historical_design.csv,462,Generated research output or experiment metadata
+papers/dss/v3_joint_reallocation/revision_figures.py,5497,Analysis code
+README.md,4117,Reproduction documentation
+DATA_SOURCES.md,2079,Reproduction documentation
+requirements-recorded.txt,117,Reproduction documentation
+papers/dss/r6/input/PLACE_DATA_HERE.txt,52,Generated research output or experiment metadata
+papers/dss/r6/sources/udacity/PLACE_DATA_HERE.txt,38,Generated research output or experiment metadata
