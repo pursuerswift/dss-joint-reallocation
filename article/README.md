@@ -4,7 +4,7 @@ The manuscript studies joint selection and transfer matching under a fixed servi
 
 From a clone of this repository, run `python article/extract_results.py` with Python 3. The script reads the deposited archives directly, regenerates `figure_3.csv` (conditional gross benefit, transfer cost and net value per 1,000 records) and `historical_candidates.csv` (nine prespecified candidates). It also checks the 324 retention decisions under each of three rules. To reproduce the standalone vector artwork for Figure 3, run `xelatex figure_3.tex` inside `article/`. It reads the plotted values from the CSV.
 
-For all other displays, extract the three archives in the order given in the repository README and follow [the reproduction guide](../REPRODUCE_20261119.md). Experiment paths below are relative to `experiments/upgrade_v3/results/` in the extracted release.
+For all other displays, extract the three archives in the order given in the repository README and follow [the reproduction guide](../REPRODUCE.md). Experiment paths below are relative to `experiments/upgrade_v3/results/` in the extracted release.
 
 | Display | Archived source |
 |---|---|
@@ -17,4 +17,3 @@ For all other displays, extract the three archives in the order given in the rep
 | Table 5 | `joint_v3_20261117/benchmark/runtime.csv`, three executions per fixed instance. The separate prefix-stopping timings are in `submission_final_20261119/final_timing/`. |
 | Tables 6 and 7 | `expanded_v3/empirical/` contains partition designs, candidate test estimates, simultaneous adoption bounds and frozen decisions. `historical_candidates.csv` gives unrounded values for Table 7. |
 | Penalty path | `expanded_v3/penalty_path/candidate_values.csv` and `decision_values.csv`. |
-

@@ -1,79 +1,49 @@
-# Joint selection and transfer matching reproduction archive
+# Reproduce the experiments
 
-This archive accompanies the journal-formatted main manuscript. It contains
-the optimizer, comparison methods, simulation and historical-evaluation programs,
-complete result tables, configuration files, random seeds and figure sources.
-Run commands from the directory containing this README with Python 3.12.
-Recorded package versions are in requirements-recorded.txt and the run manifests.
+Extract the three archives in the order listed on the repository homepage. Run these commands from the extracted directory with Python 3.12. Package versions are recorded in requirements-recorded.txt and in the run manifests. The article directory in the repository maps the published figures and tables to their source files.
 
-## Inspect the evidence
+## Verify the archived results
 
-- expanded_v3/coupling: the controlled compatibility experiment (Figure 3).
-- joint_v3_20261117/mechanisms: the full structural grid (Table 2 and Figure 4).
-- joint_v3_20261117/benchmark: compact type-flow and network-LP timings (Table 4).
-- revision_v3_20261117/conflict: 48 resource-competition cells, four budgets,
-  5,760 paired evaluations and 17,280 method rows (Table 3 and Figure 5).
-- expanded_v3/empirical: cohort designs, candidate results, frozen adoption
-  choices and held-out estimates (Tables 5 and 6).
-- expanded_v3/penalty_path: all five penalty levels and adoption decisions.
-- expanded_v3/simulate and scale: the broader evaluation and scaling experiments.
-
-All result directories are below experiments/upgrade_v3/results/. Aggregated and
-replicate tables contain every scenario, including score-noise settings and cases
-where methods coincide. Budgets on the same population are paired evaluations.
-The 23.0% headline refers to known benefits and strong specialist-resource competition.
-
-## Run the core tests and check saved results
-
-```text
+~~~sh
 python -m unittest discover -s experiments/upgrade_v3/tests -t experiments/upgrade_v3 -v
-python experiments/upgrade_v3/verify_results.py --run-id revision_v3_20261117
 python experiments/upgrade_v3/verify_results.py --run-id expanded_v3
-```
+python experiments/upgrade_v3/verify_results.py --run-id revision_v3_20261117
+python experiments/upgrade_v3/verify_results.py --run-id submission_final_20261119
+~~~
 
-These checks require no original cohort inputs. They examine solver optimality,
-paired objectives, capacity constraints, net-value arithmetic and stored partitions.
+The checks cover solver optimality, capacity constraints, paired objectives, net-value arithmetic and stored cohort partitions. They run on the deposited files.
 
-## Regenerate the six main figures from the included outputs
+## Rerun the simulations and benchmarks
 
-```text
+~~~sh
+python experiments/upgrade_v3/joint_followup.py all --run-id joint_reproduced --workers 4
+python experiments/upgrade_v3/coupling_experiment.py --run-id coupling_reproduced --workers 4
+python experiments/upgrade_v3/run.py conflict --config experiments/upgrade_v3/config/revision_conflict.json --run-id conflict_reproduced --workers 4
+python experiments/upgrade_v3/run.py revision --config experiments/upgrade_v3/config/major_revision.json --run-id sensitivity_reproduced --workers 4
+python experiments/upgrade_v3/run.py final_timing --config experiments/upgrade_v3/config/final_revision.json --run-id timing_reproduced
+python experiments/upgrade_v3/run.py final_focus --config experiments/upgrade_v3/config/final_revision.json --run-id focus_reproduced --workers 4
+~~~
+
+Run the timing benchmark on its own. Times include sorting, optimization and final plan reconstruction, and depend on the machine. The solver option return_frontier=True returns the requested plans and scalar values for each integer budget through the largest requested cap. The deposited timing run includes the full scalar frontiers. The six 100-repetition precision estimates share their first 20 draws with the corresponding heatmap cells.
+
+## Rerun the historical evaluation
+
+Obtain the four cohort files listed in DATA_SOURCES.md and place them at the indicated paths, preserving the original row order. Run the evaluation before the penalty-path analysis so that fitted scores are available.
+
+~~~sh
+python experiments/upgrade_v3/run.py all --config experiments/upgrade_v3/config/full.json --run-id historical_reproduced --workers 4
+python experiments/upgrade_v3/penalty_path.py --run-id historical_reproduced
+~~~
+
+Saved split_ids.npz files contain partition identifiers. The accompanying design.json files record sample sizes and fitted model choices. The three promotion splits share one external test cohort. Transfer costs and incumbent lists are specified scenarios.
+
+## Regenerate plots and tables
+
+~~~sh
 python papers/dss/v3_joint_reallocation/publication_figures.py
 python papers/dss/v3_joint_reallocation/revision_figures.py
-```
+python experiments/upgrade_v3/revision_outputs.py
+python experiments/upgrade_v3/final_outputs.py
+~~~
 
-The plots are written to papers/dss/v3_joint_reallocation/figures/. Local layout
-auditing is optional; it does not enter the data calculations or plot construction.
-The manuscript source is distributed separately as DSS_v3_latex_source.zip.
-
-## Rerun the controlled experiments
-
-Use new run names to keep the supplied completed results available for comparison.
-
-```text
-python experiments/upgrade_v3/run.py conflict --config experiments/upgrade_v3/config/revision_conflict.json --run-id conflict_reproduced --workers 4
-python experiments/upgrade_v3/joint_followup.py all --run-id joint_reproduced --workers 4
-python experiments/upgrade_v3/coupling_experiment.py --run-id expanded_reproduced --workers 4
-```
-
-The timing experiment should run without other compute-intensive tasks. Its
-elapsed times are observations on the recorded machine, not fixed expected values.
-Figure scripts read the supplied published-run directories by default; after a
-new run, change their RUN/root paths to the desired run before plotting it.
-
-## Rerun the historical evaluation and broader experiments
-
-Obtain the four input files listed in DATA_SOURCES.md and place them at the paths
-shown there, retaining the original row order. Then run:
-
-```text
-python experiments/upgrade_v3/run.py all --config experiments/upgrade_v3/config/full.json --run-id expanded_reproduced --workers 4
-python experiments/upgrade_v3/penalty_path.py --run-id expanded_reproduced
-```
-
-The original input records and record-level outcome/score arrays are not included.
-Historical model fitting regenerates those arrays before the penalty-path analysis.
-The supplied split_ids.npz files contain partition identifiers; design.json files
-document source locations, sample counts and selected models. The three promotion
-splits share an external test cohort. Historical costs are specified scenarios,
-and incumbent lists are constructed policies. All 972 recorded adoption decisions
-retain the incumbent allocation.
+These scripts read the deposited runs by default. To draw Figure 3 from the four method means, run python article/extract_results.py from the repository clone, then run xelatex figure_3.tex inside article/.
