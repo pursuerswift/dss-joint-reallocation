@@ -1,0 +1,25 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{lmodern,fontspec,pgfplots}
+\setmainfont{TeX Gyre Termes}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+ width=320pt,height=165pt,ybar=1pt,bar width=9pt,
+ ymin=0,ymax=27,ytick={0,5,10,15,20,25},xmin=.48,xmax=4.52,
+ xtick={1,2,3,4},xticklabels={Score,Stop,Greedy,Flow},
+ tick label style={font=\fontsize{11.5}{14}\selectfont},
+ ylabel={Gain or cost per 1,000 records},ylabel style={font=\fontsize{11.5}{14}\selectfont},
+ axis x line*=bottom,axis y line*=left,tick align=outside,
+ ymajorgrids,grid style={black!13},axis line style={black!65},
+ legend style={draw=none,font=\fontsize{11.5}{14}\selectfont,at={(.5,1.01)},anchor=south,legend columns=3,column sep=1.2pt},
+ legend image code/.code={\fill[#1] (0cm,-.04cm) rectangle (.16cm,.065cm);}
+]
+\addplot[draw=none,fill={rgb,255:red,70;green,130;blue,180}] table[x=position,y=gross,col sep=comma]{figure_3.csv};
+\addlegendentry{Gross benefit}
+\addplot[draw=none,fill={rgb,255:red,217;green,154;blue,56}] table[x=position,y=cost,col sep=comma]{figure_3.csv};
+\addlegendentry{Transfer cost}
+\addplot[draw=none,fill={rgb,255:red,36;green,131;blue,117}] table[x=position,y=net,col sep=comma]{figure_3.csv};
+\addlegendentry{Net gain}
+\end{axis}\end{tikzpicture}
+\end{document}

@@ -2,6 +2,8 @@
 
 Research data and code for the fixed-capacity reallocation study.
 
+[Article figures, table sources and reproduction commands](article/README.md)
+
 ## Current version — 19 November 2026
 
 - [Original data and code archive](DSS_v3_reproduction.zip)
