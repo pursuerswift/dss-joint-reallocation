@@ -6,8 +6,8 @@ authors:
   - family-names: Tan
     given-names: Lei
     affiliation: Wuhan Textile University
-version: "v3-20261117"
-date-released: 2026-11-17
+version: "v3-20261119"
+date-released: 2026-11-19
 url: "https://github.com/pursuerswift/dss-joint-reallocation"
 repository-code: "https://github.com/pursuerswift/dss-joint-reallocation"
 keywords:
